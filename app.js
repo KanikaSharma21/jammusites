@@ -57,7 +57,7 @@ app.use(indexRoutes);
 app.use(commentRoutes);
 app.use("/jammuSites",JammuSiteRoutes);
 
-var port_number = process.env.PORT ||3000 ;
+var port_number = server.listen(process.env.PORT ||3000) ;
 app.listen(port_number,function(req,res){
 	console.log('server started');
 })
