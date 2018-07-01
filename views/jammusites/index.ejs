@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+
+
+<div class="container">
+ <header class="jumbotron">
+           <h2>
+               Welcome to The City Of Temples-<strong>Jammu</strong>
+            </h2>   
+<p> view our hand-picked sites of jammu </p>
+
+<a class="btn btn-primary btn-lg" href="/jammusites/new">add new site</a>
+
+</header>
+
+
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+<% jammuSites.forEach(function(jammusite){ %>
+  <div class="col-md-3 col-sm-6">
+         <div class="thumbnail">
+            <img class="image" src="<%= jammusite.image %>">
+          </div>
+      <div class="caption">
+         <h4> <%= jammusite.name %></h4>
+      </div>
+      <p>
+      <a href="/jammuSites/<%=jammusite._id %>" class="btn btn-primary">More info </a>
+      </p>
+  </div>
+  
+ <% })%>
+ </div>
+
+ </div>
+
+ <% include ../partials/footer %>

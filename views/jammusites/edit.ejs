@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+<div class="container">
+<div class="row">
+<h1 style="text-align:center">Edit <%=jammusite.name%> </h1>
+<div style="width:30%; margin:0 auto;">
+
+    <form action="/jammuSites/<%= jammusite._id %>/?_method=PUT" method="post">
+        <div class="form-group">
+            <input class="form-control" type="text" name="jammusite[name]" value="<%=jammusite.name %>">
+         </div>
+         <div class="form-group">
+              <input class="form-control" type="text"  name="jammusite[image]" value="<%= jammusite.image %>">
+              </div>
+         <div class="form-group">
+              <input class="form-control" type="number"  name="jammusite[price]" value="<%= jammusite.price %>" min="0.01" step="0.01">
+              </div>
+          <div class="form-group">
+          <div class="form-group">
+             <input class="form-control" type="text" name="jammusite[description]" value="<%= jammusite.description %>">
+             </div>
+             <div class="form-group">
+    <label for="location">Location</label>
+    <input class="form-control" type="text" name="location" id="location" value="<%= jammusite.location %>">
+</div>
+ 
+                <button class="btn btn-lg btn-block btn-primary">submit</button>
+          </div>
+    </form>
+    <a href="/jammuSites">Go Back</a>
+    </div>
+    </div>
+
+</div>
+
+<% include ../partials/footer %>

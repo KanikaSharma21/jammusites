@@ -1,0 +1,23 @@
+body{
+	background-image: url("https://3.bp.blogspot.com/-rdW11H0BQJ0/WW5dMQCgFHI/AAAAAAAARM0/gvaUkb8XQDcqTm6ddqjD9wluJ08I3uU_QCLcBGAs/s1600/sky-picture-grey.JPG");
+   background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thumbnail img{
+	width:100%;
+}
+
+.thumbnail {
+	padding :0;
+}
+
+#delete-form{
+	display: inline;
+}
+
+/* Google Map styles */
+#map {
+ height: 400px;
+ width: 100%;
+}
