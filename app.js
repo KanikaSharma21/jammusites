@@ -21,8 +21,8 @@ var   express       = require('express'),
 
 //===========================================================
 
-// mongoose.connect("mongodb://localhost/JammuSite_fina"); 
-mongoose.connect("mongodb://Kanika:mummapapa21@ds231549.mlab.com:31549/cityoftemples"); 
+mongoose.connect("mongodb://localhost/JammuSite_fina"); 
+// mongoose.connect("mongodb://Kanika:mummapapa21@ds231549.mlab.com:31549/cityoftemples"); 
     
   app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
