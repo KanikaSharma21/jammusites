@@ -20,16 +20,18 @@ following the web developer bootcamp course.....created a node.js web applicatio
     -BOOTSTRAP
     -Google Maps Api
 ### BACK END
-   -Express
-   -mongoDB
-   -mongoose
-   -passport
-   -passport-local
-   -method-override
-   -connect flash
+    -Express
+    -mongoDB
+    -mongoose
+    -passport
+    -passport-local
+    -method-override
+    -connect flash
 ### PLATFORMS
    -HEROKU
    -LocalHost
+   
+   ***it is still a work in progress ***
    
    
 
